@@ -1,0 +1,107 @@
+/*Basic Style*/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1 {
+       margin-top: 40px;
+       margin-bottom: 40px;
+       text-align: center;
+       color: #32ccff;
+    }
+
+    section {
+        position: relative;
+        background-color: rgb(200, 200, 200);
+        border: 2px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .Chicken, .Beef, .Sushi {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0;
+        border: 1.5px solid black;
+        text-align: center;
+        font-size: 100%;
+        font-weight: bolder;
+    }
+    
+    .Chicken {
+        background-color: #dd919c;
+    }
+    
+    .Beef {
+        color: white;
+        background-color: #af2525;
+    }
+    
+    .Sushi {
+        color: black;
+        background-color: rgb(193, 178, 45);
+    }
+
+    .Paragraph-Contents {
+        padding: 5px;
+        background-color: rgb(200, 200, 200);
+        margin: 3px;
+        height: 150px;
+        overflow: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*Desktop Version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*Tablet Version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*Mobile Version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
